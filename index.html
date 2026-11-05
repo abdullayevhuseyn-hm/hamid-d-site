@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="az">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HAMID-D Auto Service</title>
+  <meta name="description" content="HAMID-D Auto Service — peşəkar avto təmir, diaqnostika, kondisioner xidməti və ehtiyat hissələri mağazası.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2307070d'/><text x='50%' y='58%' text-anchor='middle' font-family='Arial' font-weight='900' font-size='34' fill='%23ff2a3d'>H</text></svg>">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="pre-ring"></div>
+    <div class="pre-logo">HAMID<span>-D</span></div>
+  </div>
+
+  <canvas id="space"></canvas>
+  <div class="noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">
+      <svg class="logo-car" viewBox="0 0 120 30"><path d="M4 24 C 18 22, 22 8, 46 6 C 70 4, 86 10, 100 16 C 108 19, 114 21, 116 24" fill="none" stroke="url(#lg)" stroke-width="3" stroke-linecap="round"/><defs><linearGradient id="lg" x1="0" x2="1"><stop offset="0" stop-color="#ff2a3d"/><stop offset="1" stop-color="#ff7a85"/></linearGradient></defs></svg>
+      <span class="logo-text">HAMID<b>-D</b></span>
+      <small>AUTO SERVICE</small>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#home">Ana səhifə</a>
+      <a href="#services">Xidmətlər</a>
+      <a href="#parts">Ehtiyat hissələri</a>
+      <a href="#about">Haqqımızda</a>
+      <a href="#process">Necə işləyirik</a>
+      <a href="#contact">Əlaqə</a>
+    </nav>
+    <a href="#contact" class="btn btn-sm btn-glow nav-cta">Növbə al</a>
+    <button class="burger" id="burger" aria-label="Menyu"><span></span><span></span><span></span></button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+
+    <div class="hero-content">
+      <div class="badge reveal"><span class="dot"></span> Bakı · Peşəkar avto mərkəz</div>
+      <h1 class="hero-title reveal">
+        <span class="glitch" data-text="HAMID-D">HAMID-D</span>
+        <span class="hero-sub">AUTO SERVICE</span>
+      </h1>
+      <p class="hero-text reveal">Avtomobiliniz üçün <b>gələcəyin texnologiyası</b> — kompüter diaqnostikası, mühərrik və şassi təmiri, kondisioner xidməti və orijinal ehtiyat hissələri bir ünvanda.</p>
+      <div class="hero-actions reveal">
+        <a href="#contact" class="btn btn-glow">Növbə al
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="#services" class="btn btn-ghost">Xidmətlərə bax</a>
+      </div>
+      <div class="hero-mini reveal">
+        <div><b data-count="12">0</b><span>+ il təcrübə</span></div>
+        <div><b data-count="15000">0</b><span>+ müştəri</span></div>
+        <div><b data-count="8">0</b><span>lift / iş yeri</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual" id="heroVisual">
+      <div class="holo-ring r1"></div>
+      <div class="holo-ring r2"></div>
+      <div class="cover-3d" id="cover3d">
+        <img src="assets/cover.png" alt="HAMID-D Auto Service binası">
+        <div class="cover-shine"></div>
+        <div class="cover-scan"></div>
+        <div class="cover-border"></div>
+      </div>
+      <div class="float-chip chip1"><i>❄</i> Kondisioner</div>
+      <div class="float-chip chip2"><i>⚙</i> Ehtiyat hissələri</div>
+      <div class="float-chip chip3"><i>◉</i> Diaqnostika</div>
+    </div>
+
+    <a href="#services" class="scroll-hint"><span></span></a>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>AVTO TƏMİR</span><i>✦</i><span>KOMPÜTER DİAQNOSTİKASI</span><i>✦</i><span>KONDİSİONER XİDMƏTİ</span><i>✦</i><span>EHTİYAT HİSSƏLƏRİ</span><i>✦</i><span>MÜHƏRRİK TƏMİRİ</span><i>✦</i><span>ŞASSİ</span><i>✦</i><span>ELEKTRİK</span><i>✦</i>
+      <span>AVTO TƏMİR</span><i>✦</i><span>KOMPÜTER DİAQNOSTİKASI</span><i>✦</i><span>KONDİSİONER XİDMƏTİ</span><i>✦</i><span>EHTİYAT HİSSƏLƏRİ</span><i>✦</i><span>MÜHƏRRİK TƏMİRİ</span><i>✦</i><span>ŞASSİ</span><i>✦</i><span>ELEKTRİK</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="section-head reveal">
+      <span class="kicker">// 01 — Xidmətlər</span>
+      <h2>Avtomobiliniz üçün <em>tam spektr</em></h2>
+      <p>Müasir avadanlıq, təcrübəli ustalar və şəffaf qiymət. Hər iş zəmanətlə təhvil verilir.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card tilt reveal">
+        <div class="card-glow"></div>
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></div>
+        <h3>Avto təmir</h3>
+        <p>Mühərrik, sürətlər qutusu, asqı və əyləc sistemlərinin peşəkar təmiri.</p>
+        <ul><li>Mühərrik kapitalı</li><li>Sürətlər qutusu</li><li>Asqı və şassi</li></ul>
+        <span class="num">01</span>
+      </article>
+
+      <article class="card tilt reveal">
+        <div class="card-glow"></div>
+        <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M7 21h10M12 17v4M7 12l2-3 3 4 2-2 3 3"/></svg></div>
+        <h3>Diaqnostika</h3>
+        <p>Kompüter diaqnostikası ilə nasazlığı dəqiq tapır, vaxtınıza qənaət edirik.</p>
+        <ul><li>OBD-II / ECU skan</li><li>Elektrik sistemi</li><li>Satışdan əvvəl yoxlama</li></ul>
+        <span class="num">02</span>
+      </article>
+
+      <article class="card tilt reveal">
+        <div class="card-glow"></div>
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2v20M4.9 6.5l14.2 11M4.9 17.5l14.2-11M9 3l3 3 3-3M9 21l3-3 3 3"/></svg></div>
+        <h3>Kondisioner xidməti</h3>
+        <p>Freon doldurulması, sızma yoxlaması və sistemin tam dezinfeksiyası.</p>
+        <ul><li>Freon doldurma</li><li>Kompressor təmiri</li><li>Antibakterial təmizlik</li></ul>
+        <span class="num">03</span>
+      </article>
+
+      <article class="card tilt reveal">
+        <div class="card-glow"></div>
+        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></div>
+        <h3>Ehtiyat hissələri</h3>
+        <p>Öz mağazamızda orijinal və keyfiyyətli analoq hissələr — yerində quraşdırma.</p>
+        <ul><li>Orijinal / OEM</li><li>Sifarişlə gətirmə</li><li>Yerində quraşdırma</li></ul>
+        <span class="num">04</span>
+      </article>
+
+      <article class="card tilt reveal">
+        <div class="card-glow"></div>
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+        <h3>Avto elektrik</h3>
+        <p>Generator, starter, işıqlandırma və naqil sistemlərinin bərpası.</p>
+        <ul><li>Generator / starter</li><li>Akkumulyator testi</li><li>Faralar və optika</li></ul>
+        <span class="num">05</span>
+      </article>
+
+      <article class="card tilt reveal">
+        <div class="card-glow"></div>
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><circle cx="12" cy="12" r="3"/><path d="M12 2v7M12 15v7M2 12h7M15 12h7"/></svg></div>
+        <h3>Texniki qulluq</h3>
+        <p>Yağ, filtrlər, şamlar və mayelərin vaxtında dəyişdirilməsi — planlı servis.</p>
+        <ul><li>Yağ və filtrlər</li><li>Əyləc mayesi / antifriz</li><li>Mövsümi yoxlama</li></ul>
+        <span class="num">06</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- PARTS SHOP -->
+  <section class="section parts" id="parts">
+    <div class="parts-grid">
+      <div class="parts-info reveal">
+        <span class="kicker">// 02 — Mağaza</span>
+        <h2>Ehtiyat hissələri <em>mağazası</em></h2>
+        <p>Servisimizin içində yerləşən mağazada geniş çeşiddə ehtiyat hissələri tapa bilərsiniz. Lazım olan hissə yoxdursa, qısa müddətdə sifarişlə gətiririk.</p>
+        <div class="parts-feats">
+          <div><b>✓</b> Orijinal və OEM keyfiyyət</div>
+          <div><b>✓</b> VIN koda görə dəqiq seçim</div>
+          <div><b>✓</b> Hər hissəyə zəmanət</div>
+          <div><b>✓</b> Alış + quraşdırma bir yerdə</div>
+        </div>
+        <a href="#contact" class="btn btn-glow">Hissə sorğusu göndər</a>
+      </div>
+
+      <div class="parts-cats">
+        <div class="cat tilt reveal"><span class="cat-ico">⛭</span><h4>Mühərrik hissələri</h4><small>Porşen, kəmər, nasos</small></div>
+        <div class="cat tilt reveal"><span class="cat-ico">◎</span><h4>Əyləc sistemi</h4><small>Kolodka, disk, support</small></div>
+        <div class="cat tilt reveal"><span class="cat-ico">⌇</span><h4>Asqı və şassi</h4><small>Amortizator, ştanqa</small></div>
+        <div class="cat tilt reveal"><span class="cat-ico">❄</span><h4>Kondisioner</h4><small>Kompressor, radiator</small></div>
+        <div class="cat tilt reveal"><span class="cat-ico">⚡</span><h4>Elektrik</h4><small>Akkumulyator, sensorlar</small></div>
+        <div class="cat tilt reveal"><span class="cat-ico">◈</span><h4>Yağ və filtrlər</h4><small>Yağ, hava, salon filtri</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / STATS -->
+  <section class="section about" id="about">
+    <div class="about-wrap">
+      <div class="about-visual reveal">
+        <div class="cube-scene">
+          <div class="cube">
+            <div class="face f1">HAMID-D</div>
+            <div class="face f2">TƏMİR</div>
+            <div class="face f3">DİAQNOSTİKA</div>
+            <div class="face f4">HİSSƏLƏR</div>
+            <div class="face f5">❄</div>
+            <div class="face f6">⚙</div>
+          </div>
+        </div>
+        <div class="orbit"><span></span></div>
+        <div class="orbit o2"><span></span></div>
+      </div>
+      <div class="about-text reveal">
+        <span class="kicker">// 03 — Haqqımızda</span>
+        <h2>Peşəkar xidmət. <em>Etibarlı həll.</em></h2>
+        <p>HAMID-D Auto Service iki mərtəbəli müasir mərkəzdə fəaliyyət göstərir: təmir zonası, ehtiyat hissələri mağazası, ofis və müştərilər üçün rahat kafe. Avtomobiliniz təmir olunarkən siz kafemizdə qəhvə içib gözləyə bilərsiniz.</p>
+        <div class="stats">
+          <div class="stat"><b data-count="12">0</b><span>il təcrübə</span></div>
+          <div class="stat"><b data-count="15000">0</b><span>razı müştəri</span></div>
+          <div class="stat"><b data-count="25">0</b><span>usta və mütəxəssis</span></div>
+          <div class="stat"><b data-count="98">0</b><span>% təkrar müraciət</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" id="process">
+    <div class="section-head reveal">
+      <span class="kicker">// 04 — Proses</span>
+      <h2>4 addımda <em>hazır avtomobil</em></h2>
+    </div>
+    <div class="steps">
+      <div class="line"><span id="lineFill"></span></div>
+      <div class="step reveal"><div class="step-n">1</div><h4>Müraciət</h4><p>Zəng edin və ya formu doldurun, sizə uyğun vaxta növbə yazaq.</p></div>
+      <div class="step reveal"><div class="step-n">2</div><h4>Diaqnostika</h4><p>Avtomobili yoxlayır, problemi və qiyməti əvvəlcədən bildiririk.</p></div>
+      <div class="step reveal"><div class="step-n">3</div><h4>Təmir</h4><p>Razılaşdırılmış işləri keyfiyyətli hissələrlə yerinə yetiririk.</p></div>
+      <div class="step reveal"><div class="step-n">4</div><h4>Təhvil</h4><p>Son yoxlamadan sonra avtomobili zəmanətlə təhvil veririk.</p></div>
+    </div>
+  </section>
+
+  <!-- CAFE -->
+  <section class="section cafe">
+    <div class="cafe-card reveal">
+      <div class="cafe-img" style="background-image:url(assets/cover.png)"></div>
+      <div class="cafe-body">
+        <span class="kicker">// Office &amp; Kafe</span>
+        <h2>Gözləmək də <em>rahat</em> olsun</h2>
+        <p>Pulsuz Wi-Fi, isti qəhvə və rahat oturacaqlar. Ustalarımız işləyərkən siz istirahət edin və ya öz işlərinizlə məşğul olun.</p>
+        <div class="tags"><span>☕ Kafe</span><span>📶 Wi-Fi</span><span>🛋 Lounge</span><span>🅿 Parkinq</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="section-head reveal">
+      <span class="kicker">// 05 — Əlaqə</span>
+      <h2>Növbəyə <em>yazılın</em></h2>
+      <p>Formu doldurun, əməkdaşımız qısa zamanda sizinlə əlaqə saxlayacaq.</p>
+    </div>
+    <div class="contact-grid">
+      <form class="form glass reveal" id="form">
+        <div class="row">
+          <label><span>Adınız</span><input required name="name" placeholder="Adınız"></label>
+          <label><span>Telefon</span><input required name="phone" type="tel" placeholder="+994 __ ___ __ __"></label>
+        </div>
+        <div class="row">
+          <label><span>Avtomobil</span><input name="car" placeholder="Marka, model, il"></label>
+          <label><span>Xidmət</span>
+            <select name="service">
+              <option>Avto təmir</option><option>Diaqnostika</option><option>Kondisioner xidməti</option>
+              <option>Ehtiyat hissəsi sorğusu</option><option>Avto elektrik</option><option>Texniki qulluq</option>
+            </select>
+          </label>
+        </div>
+        <label><span>Qeyd</span><textarea name="note" rows="4" placeholder="Problemi qısaca yazın..."></textarea></label>
+        <button class="btn btn-glow" type="submit">WhatsApp ilə göndər
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </form>
+
+      <div class="contact-info reveal">
+        <a class="info glass tilt" href="tel:+994000000000"><span class="i">☎</span><div><small>Telefon</small><b>+994 00 000 00 00</b></div></a>
+        <a class="info glass tilt" href="https://wa.me/994000000000" target="_blank" rel="noopener"><span class="i">✆</span><div><small>WhatsApp</small><b>+994 00 000 00 00</b></div></a>
+        <div class="info glass tilt"><span class="i">⌖</span><div><small>Ünvan</small><b>Bakı şəhəri, Azərbaycan</b></div></div>
+        <div class="info glass tilt"><span class="i">◷</span><div><small>İş saatları</small><b>B.e – Şənbə: 09:00 – 19:00</b><small>Bazar: 10:00 – 16:00</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-logo">HAMID<b>-D</b> <small>AUTO SERVICE</small></div>
+    <p>Peşəkar xidmət · Etibarlı həll</p>
+    <small>© <span id="year"></span> HAMID-D Auto Service. Bütün hüquqlar qorunur.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
